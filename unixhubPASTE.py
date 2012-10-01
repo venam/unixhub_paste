@@ -243,9 +243,8 @@ if __name__ == "__main__":
                 new = ""
                 for c in argv:
                     new+= c+" "
-                print new
                 mytitle      = re.findall("-t ([^-]+)", new)[0].replace(" ","")
-                mypaste      = re.findall("-p ([^-]+)", new)[0].replace(" ","")
+                mypaste      = open(re.findall("-p ([^-]+)", new)[0].replace(" ","")).read()
                 myexposure   = re.findall("-e ([^-]+)", new)[0].replace(" ","")
                 myexpiration = re.findall("-ex ([^-]+)", new)[0].replace(" ","")
                 mysyntax     = re.findall("-s ([^-]+)", new)[0].replace(" ","")
