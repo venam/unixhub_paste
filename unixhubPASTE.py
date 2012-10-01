@@ -7,8 +7,8 @@ import readline
 
 
 ###############supposedly complete the path and commands###################
-COMMANDS = ['extra', 'extension', 'stuff', 'errors',
-            'email', 'foobar', 'foo']
+COMMANDS = ['title', 'paste', 'exposure', 'expiration',
+            'syntax', 'foobar', 'foo']
 RE_SPACE = re.compile('.*\s+$', re.M)
 
 class Completer(object):
@@ -237,13 +237,22 @@ if __name__ == "__main__":
         if argv[1]=="-c" or argv[1]=="--CLI" or argv[1]=="--cli":
             menu()
         else:
-            if len(argv) != 6:
-                print "Usage: \nunixhubPASTE.py title paste exposure expiration syntax\nunixhubPASTE.py --cli #for the cli version"
+            if len(argv) != 11:
+                print "Usage: \nunixhubPASTE.py -t title -p paste_doc -e exposure -ex expiration -s syntax\nunixhubPASTE.py --cli #for the cli version"
             else:
-                print "there are 5 argv"
-                #start something else her
-                Mythread = unixhubuploader("title", "paste", "exposure", "expiration", "syntax")
+                new = ""
+                for c in argv:
+                    new+= c+" "
+                print new
+                mytitle      = re.findall("-t ([^-]+)", new)[0].replace(" ","")
+                mypaste      = re.findall("-p ([^-]+)", new)[0].replace(" ","")
+                myexposure   = re.findall("-e ([^-]+)", new)[0].replace(" ","")
+                myexpiration = re.findall("-ex ([^-]+)", new)[0].replace(" ","")
+                mysyntax     = re.findall("-s ([^-]+)", new)[0].replace(" ","")
+
+                Mythread = unixhubuploader(mytitle, mypaste, myexposure, myexpiration, mysyntax)
                 Mythread.start()
     else:
-        print "Usage:\nunixhubPASTE.py title paste exposure expiration syntax\nunixhubPASTE.py --cli #for the cli version"
+        print "Usage: \nunixhubPASTE.py -t title -p paste_doc -e exposure -ex expiration -s syntax\nunixhubPASTE.py --cli #for the cli version"
+
 
