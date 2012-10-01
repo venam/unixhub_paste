@@ -5,4 +5,5 @@ _arguments \
   '-p[File to Paste Location]' \
   '-e[Exposure :(public|private)]:public|private' \
   '-ex[Expiration (1-10min||2-1h||3-1day||4-1month||never)]:(1-10min||2-1h||3-1day||4-1month||never' \
-  '-s[syntax]:c, css, cpp, html4strict, java, perl, php, python, ruby, text, asm, xhtml, actionscript, ada, apache, applescript, autoit, bash, bptzbasic, c_mac, csharp, ColdFusion, delphi, eiffel, fortran, freebasic, gml, groovy, inno, java5, javascript, latex, mirc, mysql, nsis, objc, ocaml, oobas, orcale8, pascal, plsql, qbasic, robots, scheme, sdlbasic, smalltalk, smarty, sql, tcl, vbnet, vb, winbatch, xml, z80'
+  '-s[syntax]:c, css, cpp, html4strict, java, perl, php, python, ruby, text, asm, xhtml, actionscript, ada, apache, applescript, autoit, bash, bptzbasic, c_mac, csharp, ColdFusion, delphi, eiffel, fortran, freebasic, gml, groovy, inno, java5, javascript, latex, mirc, mysql, nsis, objc, ocaml, oobas, orcale8, pascal, plsql, qbasic, robots, scheme, sdlbasic, smalltalk, smarty, sql, tcl, vbnet, vb, winbatch, xml, z80'\
+  '-c[cli version]'
