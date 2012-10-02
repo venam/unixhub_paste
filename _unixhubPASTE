@@ -2,7 +2,7 @@
  
 _arguments \
   '-t[Title of the Paste]:Title of the Paste' \
-  '-p[File to Paste Location]:->files' \
+  '-p[File to Paste Location]:File to Paste:_files' \
   '-e[Exposure]:exposure:(public private)' \
   '-ex[Expiration]:Expiration:(10min 1h 1day 1month never)' \
   '-s[syntax]:syntax:(c css cpp html4strict java perl php python ruby text asm xhtml actionscript ada apache applescript autoit bash bptzbasic c_mac csharp ColdFusion delphi eiffel fortran freebasic gml groovy inno java5 javascript latex mirc mysql nsis objc ocaml oobas orcale8 pascal plsql qbasic robots scheme sdlbasic smalltalk smarty sql tcl vbnet vb winbatch xml z80)'\

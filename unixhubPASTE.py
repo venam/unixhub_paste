@@ -195,7 +195,7 @@ class bcolors:
 ##################################
 
 
-def menu()
+def menu():
     os.system("./starter.sh")
     #some menu will go here
     title=""
@@ -258,7 +258,8 @@ if __name__ == "__main__":
                     myexpiration='4'
                 elif myexpiration =='never':
                     myexpiration='never'
-
+                print myexpiration
+                exit(1)
                 Mythread = unixhubuploader(mytitle, mypaste, myexposure, myexpiration, mysyntax)
                 Mythread.start()
     else:
