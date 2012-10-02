@@ -195,7 +195,7 @@ class bcolors:
 ##################################
 
 
-def menu():
+def menu()
     os.system("./starter.sh")
     #some menu will go here
     title=""
@@ -248,8 +248,16 @@ if __name__ == "__main__":
                 myexposure   = re.findall("-e ([^-]+)", new)[0].replace(" ","")
                 myexpiration = re.findall("-ex ([^-]+)", new)[0].replace(" ","")
                 mysyntax     = re.findall("-s ([^-]+)", new)[0].replace(" ","")
-                
-
+                if myexpiration == '10min':
+                    myexpiration='1'
+                elif myexpiration =='1h':
+                    myexpiration='2'
+                elif myexpiration == '1day':
+                    myexpiration='3'
+                elif myexpiration =='1month':
+                    myexpiration='4'
+                elif myexpiration =='never':
+                    myexpiration='never'
 
                 Mythread = unixhubuploader(mytitle, mypaste, myexposure, myexpiration, mysyntax)
                 Mythread.start()
