@@ -248,6 +248,8 @@ if __name__ == "__main__":
                 myexposure   = re.findall("-e ([^-]+)", new)[0].replace(" ","")
                 myexpiration = re.findall("-ex ([^-]+)", new)[0].replace(" ","")
                 mysyntax     = re.findall("-s ([^-]+)", new)[0].replace(" ","")
+                
+
 
                 Mythread = unixhubuploader(mytitle, mypaste, myexposure, myexpiration, mysyntax)
                 Mythread.start()
