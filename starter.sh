@@ -22,7 +22,6 @@ initializeANSI()
 initializeANSI
 
 cat << EOF
-something here
 ${blackf}           ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ${boldon}${purplef} █  ▀         ${ulon}${yellowf} http://paste.unixhub.net  ${blackf}      ▀▀▀▀
 ${boldon}${purplef} ██        ${greenf}by Venam ${uloff}
