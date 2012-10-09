@@ -23,6 +23,7 @@ initializeANSI
 
 cat << EOF
 
+something else here
 ${blackf}           ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ${boldon}${purplef} █  ▀         ${ulon}${yellowf} http://paste.unixhub.net  ${blackf}      ▀▀▀▀
 ${boldon}${purplef} ██        ${greenf}by Venam ${uloff}
